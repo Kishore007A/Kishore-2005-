@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KISHORE A - Portfolio</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #2c3e50; /* Dark background color */
+            color: #ecf0f1; /* Light text color */
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #34495e; /* Darker container background */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            color: #ecf0f1;
+            margin-top: 10px;
+        }
+
+        /* Header Image */
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid #16a085; /* Teal border */
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 28px;
+            color: #16a085; /* Teal section header */
+            margin-bottom: 15px;
+        }
+
+        section p, section ul {
+            font-size: 16px;
+            color: #ecf0f1;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: flex-start; /* Align items to the left */
+            gap: 10px; /* Space between elements */
+        }
+
+        .contact-info div {
+            font-size: 16px;
+            color: #bdc3c7;
+        }
+
+        .contact-info div a {
+            text-decoration: none;
+            color: #16a085;
+        }
+
+        /* Feedback Form */
+        .feedback-form input,
+        .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .feedback-form button {
+            background-color: #16a085;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .feedback-form button:hover {
+            background-color: #1abc9c; /* Lighter shade on hover */
+        }
+
+        /* Skills Section */
+        .skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid layout */
+            gap: 15px;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .skills li {
+            background-color: #16a085; /* Teal background for skill tags */
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .skills li:hover {
+            background-color: #1abc9c; /* Lighter teal on hover */
+            transform: scale(1.1); /* Slightly increase the size on hover */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #16a085;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <img src="your-profile-picture.jpg" alt="KISHORE A" class="profile-img">
+            <h1>KISHORE A</h1>
+        </header>
+
+        <!-- About Me Section -->
+        <section>
+            <h2>About Me</h2>
+            <p>Hello, I'm KISHORE A, a Full-Stack Developer with a passion for technology and problem-solving. I enjoy working on both front-end and back-end development and continuously strive to learn and improve my skills. Currently, I am pursuing my BSc in Information Technology and gaining experience through internships and personal projects.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: C, C++, Java</li>
+                <li>Web Technologies: HTML, CSS, JavaScript</li>
+                <li>Frontend Frameworks: React, Vue.js</li>
+                <li>Backend Technologies: Node.js, Express</li>
+            </ul>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>TN Ration Shop Bio Metric</h3>
+                    <p>Developed a biometric system with fingerprint and eye scanning capabilities.</p>
+                </li>
+                <li>
+                    <h3>Women Safety App</h3>
+                    <p>An emergency safety assistance app that alerts contacts and authorities in case of a safety threat. Built with JavaScript and React for front-end, integrated with backend services for real-time alerts.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h3>BSc in Information Technology</h3>
+                    <p>University of Sri Vasavi College | 2023 - Present</p>
+                    <p>Currently pursuing a degree in Information Technology with a focus on full-stack development and software engineering.</p>
+                </li>
+                <li>
+                    <h3>(10th & 12th Grade)</h3>
+                    <p>ABC High School | 2021 - 2023</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact Info -->
+        <section>
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <div>Email: <a href="mailto:kishoreashokkumr2005@gmail.com">kishoreashokkumr2005@gmail.com</a></div>
+                <div>Phone: +91 7603848657</div>
+            </div>
+        </section>
+
+        <!-- Feedback Form -->
+        <section>
+            <h2>Feedback Form</h2>
+            <form action="mailto:kishoreashokkumar2005@gmail.com" method="post" enctype="text/plain" class="feedback-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="feedback" rows="5" placeholder="Your Feedback" required></textarea>
+                <button type="submit">Send Feedback</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <b>Check out my <a href="your-resume-link.pdf" target="_blank">Resume</a></b>
+        </footer>
+    </div>
+
+</body>
+</html>
